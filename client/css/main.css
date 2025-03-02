@@ -1,0 +1,64 @@
+body {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.sidebar {
+    height: 100%;
+    background-color: rgb(7, 7, 7);
+}
+
+.sidebar-list {
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebar-list-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-weight: 900;
+}
+
+.sidebar-list-item:hover {
+    background-color: rgb(19, 19, 19);
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.content-overlay {
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+    background-color: black;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
+.content-gameframe {
+    height: 100%;
+    width: 100%;
+}
